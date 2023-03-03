@@ -22,6 +22,7 @@ router.post("/", async(req, res)=>{
         email : req.body.email,
         password : hasedPassword
     }).save(); 
+    
     const token =  generateAuthToken(user._id); 
     res.status(201).json({message : "Successfully signed up", token})
 } catch (error) {

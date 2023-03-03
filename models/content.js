@@ -7,13 +7,12 @@ const contentSchema = new mongoose.Schema(
             type : String, 
             required : true,
         }, 
-        poisition : {
+        position : {
             type : String, 
             required : true,
         },
         date : {
-            type : Date,
-            default : Date.now(),
+            type : String,
         }, 
         package : {
             type : String,
